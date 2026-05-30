@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
   
   <title>Frontend Mentor | Results summary component</title>
 
@@ -12,32 +16,62 @@
   <style>
     .attribution { font-size: 0.6875rem; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .font-hanken {
+        font-family: "Hanken Grotesk", sans-serif;
+    }
   </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
+<body class="bg-black/15 min-h-screen  min-w-screen sm:flex sm:flex-col">
+ <main class="font-hanken w-full flex flex-col justify-center sm:flex sm:items-center sm:flex-1 max-w-[425px] ">
+   <div class="bg-[#1125d4] flex flex-col items-center bg-gradient-to-b from-[#7857ff] to-[#2e2be9] text-[#ffffff] p-10 rounded-b-3xl z-10 relative sm:flex-1">
+    <p>Your Result</p>
+     <div class="bg-gradient-to-t from-[#2120CA00] to-[#5921CA] flex flex-col items-center justify-center rounded-full h-[10rem]  w-[10rem] mt-3">
+        <h1 class="text-6xl mb-2">76</h1>
+        <p> of 100</p>
+      </div>
+      <h3 class="text-2xl my-3">Great</h3>
+      <p class="text-center text-sm">You scored higher than 65% of the people who have taken these tests.</p>
+   </div>
   
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
+  <div class="bg-white py-10 px-6 relative -top-7 z-0 rounded-b-3xl sm:flex-1 sm:top-0 sm:h-full sm:h-">
+      <h3 class="mb-3 font-bold">Summary</h3>
+    
+      <div class="font-bold flex flex-col gap-3">
+        <div class="flex bg-[#ff5757]/15 justify-between items-center px-3 py-2 rounded-lg">
+          <div class="flex items-center gap-1"> 
+              <img src="./assets/images/icon-reaction.svg" alt="">
+              <p class="text-[#ff5757]">Reaction</p>
+          </div>
+            <p class="text-[#303b5a]">80 <span class="opacity-45">/ 100</span></p>
+        </div>
+        
+        <div class="flex bg-[#FFB01F]/15 justify-between items-center px-3 py-2 rounded-lg">
+          <div class="flex items-center gap-1"> 
+              <img src="./assets/images/icon-memory.svg" alt="">
+              <p class="text-[#FFB01F]">Memory</p>
+          </div>
+            <p class="text-[#303b5a]">92 <span class="opacity-45">/ 100</span></p>
+        </div>
+        <div class="flex bg-[#0091BD]/15 justify-between items-center px-3 py-2 rounded-lg">
+          <div class="flex items-center gap-1"> 
+              <img src="./assets/images/icon-verbal.svg" alt="">
+              <p class="text-[#0091BD]">Verbal</p>
+          </div>
+            <p class="text-[#303b5a]">61 <span class="opacity-45">/ 100</span></p>
+        </div>
+        <div class="flex bg-[#1125D5]/15 justify-between items-center px-3 py-2 rounded-lg">
+          <div class="flex items-center gap-1"> 
+              <img src="./assets/images/icon-visual.svg" alt="">
+              <p class="text-[#1125D5]">Visual</p>
+          </div>
+            <p class="text-[#303b5a]">72 <span class="opacity-45">/ 100</span></p>
+        </div>
+        <button class="bg-[#303b5a] rounded-full py-2 text-[#ffffff]">Continue</button>
+      </div>
+    
+  </div>
+ </main>
   
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
