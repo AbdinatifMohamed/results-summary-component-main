@@ -35,6 +35,23 @@ The designs were created to the following widths:
 - Light lavender: hsl(241, 100%, 89%)
 - Dark gray blue: hsl(224, 30%, 27%)
 
+
+Primary
+Light red: #FF5757
+Orangey yellow: #FF6D1F
+Green teal: #00bd91
+Cobalt blue: #1125d4
+Gradients
+Light slate blue (background): #7857FF
+Light royal blue (background): #2E2BE9
+Violet blue (circle): #4E21CA
+Persian blue (circle): #2421CA00
+Neutral
+White: #FFFFFF
+Pale blue: #ebf1ff
+Light lavender: #c8c7ff
+Dark gray blue: #303B5A
+
 ### Notes
 
 Use transparency to get the color variations necessary to match the design. Hint: look into using `hsla()`.

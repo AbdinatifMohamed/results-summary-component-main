@@ -22,56 +22,58 @@
   </style>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-black/15 min-h-screen  min-w-screen sm:flex sm:flex-col">
- <main class="font-hanken w-full flex flex-col justify-center sm:flex sm:items-center sm:flex-1 max-w-[425px] ">
-   <div class="bg-[#1125d4] flex flex-col items-center bg-gradient-to-b from-[#7857ff] to-[#2e2be9] text-[#ffffff] p-10 rounded-b-3xl z-10 relative sm:flex-1">
-    <p>Your Result</p>
-     <div class="bg-gradient-to-t from-[#2120CA00] to-[#5921CA] flex flex-col items-center justify-center rounded-full h-[10rem]  w-[10rem] mt-3">
-        <h1 class="text-6xl mb-2">76</h1>
-        <p> of 100</p>
-      </div>
-      <h3 class="text-2xl my-3">Great</h3>
-      <p class="text-center text-sm">You scored higher than 65% of the people who have taken these tests.</p>
-   </div>
+<body class="h-screen bg-[#EBF1FF] flex flex-col justify-center items-center">
   
-  <div class="bg-white py-10 px-6 relative -top-7 z-0 rounded-b-3xl sm:flex-1 sm:top-0 sm:h-full sm:h-">
-      <h3 class="mb-3 font-bold">Summary</h3>
-    
-      <div class="font-bold flex flex-col gap-3">
-        <div class="flex bg-[#ff5757]/15 justify-between items-center px-3 py-2 rounded-lg">
-          <div class="flex items-center gap-1"> 
-              <img src="./assets/images/icon-reaction.svg" alt="">
-              <p class="text-[#ff5757]">Reaction</p>
-          </div>
-            <p class="text-[#303b5a]">80 <span class="opacity-45">/ 100</span></p>
-        </div>
+
+  <main class="h-[450px] max-w-[600px] flex font-hanken bg-white rounded-full w-full">
+    <div class="h-full w-1/2 bg-gradient-to-b from-[#7857FF] to-[#2E2BE9] rounded-[2rem] flex flex-col items-center justify-center px-7 text-white">
+      <div class="opacity-50 text-xl">Your Result</div>
         
-        <div class="flex bg-[#FFB01F]/15 justify-between items-center px-3 py-2 rounded-lg">
-          <div class="flex items-center gap-1"> 
+        <div class="bg-gradient-to-b from-[#4E21CA] to-[#2421CA00] rounded-full  w-[10rem] h-[10rem] flex flex-col items-center justify-center mt-4 mb-5">
+          <h2 class="text-[3rem] font-bold">76</h2>
+          <p class="opacity-50">of 100</p>
+        </div>
+
+        <div class="mb-2">Great</div>
+        <div class="text-center">You scored higher than 65% of the people who have taken these tests.</div>
+    </div>
+    <div class="h-full w-1/2 bg-white rounded-[2rem] flex flex-col items-center justify-center px-7">
+        <h2 class="w-full text-xl">Summary</h2>
+        <div class="w-full flex flex-col gap-2 mt-3 mb-6 text-[.75rem]">
+          <!-- Reaction -->
+          <div class="flex bg-[#FF5757]/15 items-center justify-between py-3 px-3 rounded-lg w">
+            <div class="flex gap-1 items-center">
+              <img src="./assets/images/icon-reaction.svg" alt="">
+              <p class="text-[#FF5757] ">Reaction</p>
+            </div>
+              <p><span class="font-bold">80</span> / 100</p>
+           </div>
+           <!-- Memory-->
+            <div class="flex bg-[#FF6D1F]/15 items-center justify-between py-3 px-3 rounded-lg">
+            <div class="flex gap-1">
               <img src="./assets/images/icon-memory.svg" alt="">
-              <p class="text-[#FFB01F]">Memory</p>
-          </div>
-            <p class="text-[#303b5a]">92 <span class="opacity-45">/ 100</span></p>
-        </div>
-        <div class="flex bg-[#0091BD]/15 justify-between items-center px-3 py-2 rounded-lg">
-          <div class="flex items-center gap-1"> 
+              <p class="text-[#ffb01f]">Memory</p>
+            </div>
+              <p><span class="font-bold">92</span> / 100</p>
+           </div>
+            <div class="flex bg-[#00bd91]/15 items-center justify-between py-3 px-3 rounded-lg">
+            <div class="flex gap-1">
               <img src="./assets/images/icon-verbal.svg" alt="">
-              <p class="text-[#0091BD]">Verbal</p>
-          </div>
-            <p class="text-[#303b5a]">61 <span class="opacity-45">/ 100</span></p>
-        </div>
-        <div class="flex bg-[#1125D5]/15 justify-between items-center px-3 py-2 rounded-lg">
-          <div class="flex items-center gap-1"> 
+              <p class="text-[#00bd91]">Verbal</p>
+            </div>
+              <p><span class="font-bold">61</span> / 100</p>
+           </div>
+            <div class="flex bg-[#1125d4]/15 items-center justify-between py-3 px-3 rounded-lg">
+            <div class="flex gap-1">
               <img src="./assets/images/icon-visual.svg" alt="">
-              <p class="text-[#1125D5]">Visual</p>
-          </div>
-            <p class="text-[#303b5a]">72 <span class="opacity-45">/ 100</span></p>
+              <p class="text-[#1125d4]">Visual</p>
+            </div>
+              <p><span class="font-bold">73</span> / 100</p>
+           </div>
         </div>
-        <button class="bg-[#303b5a] rounded-full py-2 text-[#ffffff]">Continue</button>
-      </div>
-    
-  </div>
- </main>
+        <button class="bg-[#303B5A] w-full py-2 rounded-lg text-white">Continue</button>
+    </div>
+  </main>
   
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
