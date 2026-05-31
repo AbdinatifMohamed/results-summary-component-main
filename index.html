@@ -25,23 +25,23 @@
 <body class="h-screen bg-[#EBF1FF] flex flex-col justify-center items-center">
   
 
-  <main class="h-[450px] max-w-[600px] flex font-hanken bg-white rounded-full w-full">
-    <div class="h-full w-1/2 bg-gradient-to-b from-[#7857FF] to-[#2E2BE9] rounded-[2rem] flex flex-col items-center justify-center px-7 text-white">
-      <div class="opacity-50 text-xl">Your Result</div>
+  <main class="h-[450px] max-w-[600px] flex font-hanken bg-white rounded-full w-full max-[475px]:flex-col max-[475px]:flex-1 max-[475px]:items-center">
+    <div class="h-full w-1/2 bg-gradient-to-b from-[#7857FF] to-[#2E2BE9] rounded-[2rem] flex flex-col items-center justify-center px-7 text-white max-[475px]:w-full max-[475px]:rounded-t-none">
+      <div class="opacity-50 text-xl font-medium">Your Result</div>
         
         <div class="bg-gradient-to-b from-[#4E21CA] to-[#2421CA00] rounded-full  w-[10rem] h-[10rem] flex flex-col items-center justify-center mt-4 mb-5">
           <h2 class="text-[3rem] font-bold">76</h2>
           <p class="opacity-50">of 100</p>
         </div>
 
-        <div class="mb-2">Great</div>
+        <div class="mb-2 md:text-xl">Great</div>
         <div class="text-center">You scored higher than 65% of the people who have taken these tests.</div>
     </div>
-    <div class="h-full w-1/2 bg-white rounded-[2rem] flex flex-col items-center justify-center px-7">
-        <h2 class="w-full text-xl">Summary</h2>
-        <div class="w-full flex flex-col gap-2 mt-3 mb-6 text-[.75rem]">
+    <div class="h-full w-1/2 bg-white rounded-[2rem] flex flex-col items-center justify-center px-7 max-[475px]:w-full">
+        <h2 class="w-full text-xl font-medium">Summary</h2>
+        <div class="w-full flex flex-col gap-3 mt-3 mb-6 text-[.75rem]">
           <!-- Reaction -->
-          <div class="flex bg-[#FF5757]/15 items-center justify-between py-3 px-3 rounded-lg w">
+          <div class="flex bg-[#FF5757]/5 items-center justify-between py-3 px-3 rounded-lg w">
             <div class="flex gap-1 items-center">
               <img src="./assets/images/icon-reaction.svg" alt="">
               <p class="text-[#FF5757] ">Reaction</p>
@@ -49,21 +49,21 @@
               <p><span class="font-bold">80</span> / 100</p>
            </div>
            <!-- Memory-->
-            <div class="flex bg-[#FF6D1F]/15 items-center justify-between py-3 px-3 rounded-lg">
+            <div class="flex bg-[#FF6D1F]/5 items-center justify-between py-3 px-3 rounded-lg">
             <div class="flex gap-1">
               <img src="./assets/images/icon-memory.svg" alt="">
               <p class="text-[#ffb01f]">Memory</p>
             </div>
               <p><span class="font-bold">92</span> / 100</p>
            </div>
-            <div class="flex bg-[#00bd91]/15 items-center justify-between py-3 px-3 rounded-lg">
+            <div class="flex bg-[#00bd91]/5 items-center justify-between py-3 px-3 rounded-lg">
             <div class="flex gap-1">
               <img src="./assets/images/icon-verbal.svg" alt="">
               <p class="text-[#00bd91]">Verbal</p>
             </div>
               <p><span class="font-bold">61</span> / 100</p>
            </div>
-            <div class="flex bg-[#1125d4]/15 items-center justify-between py-3 px-3 rounded-lg">
+            <div class="flex bg-[#1125d4]/5 items-center justify-between py-3 px-3 rounded-lg">
             <div class="flex gap-1">
               <img src="./assets/images/icon-visual.svg" alt="">
               <p class="text-[#1125d4]">Visual</p>
@@ -77,7 +77,7 @@
   
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Abdinatif Mohamed</a>.
   </footer>
 </body>
 </html>
